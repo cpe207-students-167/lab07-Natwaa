@@ -3,7 +3,7 @@ const firstNameInput = document.querySelector("#first-name-input");
 const lastNameInput = document.querySelector("#last-name-input");
 const emailInput = document.querySelector("#email-input");
 const passwordInput = document.querySelector("#password-input");
-const passwordConfirmation = document.querySelector("#password-confirm-input");
+const confirmPasswordInput = document.querySelector("#password-confirm-input");
 
 // create reference for buttons.
 const submitBtn = document.querySelector("#submit-btn");
@@ -53,7 +53,7 @@ submitBtn.onclick = () => {
   let isConfirmPasswordOk = false;
 
   // validate first name
-  if (firstNameInput.value !== "CPE207") {
+  if (firstNameInput.value === "") {
     firstNameInput.classList.add("is-invalid");
   } else {
     firstNameInput.classList.add("is-valid");
@@ -85,7 +85,7 @@ submitBtn.onclick = () => {
   }
 
   // validate confirm password
-  if (confirmPasswordInput.value === passwordInput.value) {
+  if (confirmPasswordInput.value.length >= 6 && confirmPasswordInput.value === passwordInput.value) {
     confirmPasswordInput.classList.add("is-valid");
     isConfirmPasswordOk = true;
   } else {
