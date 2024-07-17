@@ -7,7 +7,7 @@
 
 ชื่อ-สกุล : ณัฐวรา ไชยสิทธิ์
 
-GitHub Page URL :https://cpe207-students-167.github.io./lab07-Natwara
+GitHub Page URL :https://cpe207-students-167.github.io/lab07-Natwaa/
 
 ---
 
